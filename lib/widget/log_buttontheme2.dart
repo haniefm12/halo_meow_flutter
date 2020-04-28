@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halomeow/main_page/home_page.dart';
+import 'package:halomeow/style/constants.dart';
 
 class LogButton2 extends StatefulWidget {
   LogButton2(
@@ -33,7 +34,7 @@ class _LogButton2State extends State<LogButton2> {
         child: Text(widget.buttonLogText,
             style: TextStyle(
                 fontSize: 18.0,
-                fontFamily: 'Montserrat',
+                fontFamily: kPrimaryFontFamily,
                 color: widget.buttonTextColor)),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15.0),

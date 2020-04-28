@@ -1,278 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:halomeow/style/constants.dart';
+import 'akun.dart';
+import 'beranda.dart';
+import 'konsultasi.dart';
 
-class HomePage extends StatelessWidget {
-  // This widget is the root of your application.
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+  int _selectedTab = 0;
+
+  final _pageOptions= [
+
+    BerandaPage(),
+    KonsultasiPage(),
+    AkunPage(),
+
+  ];
+  List<String> tABarr =[
+    'Beranda',
+    'Konsultasi',
+    'Akun',
+
+  ];
+
+  String titleAppBar;
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            centerTitle: true,
-            title: Text(
-              'Beranda',
-              style: TextStyle(
-                  fontSize: 24,
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.w500),
-            ),
-            backgroundColor: Color.fromRGBO(
-              243,
-              72,
-              91,
-              1.0,
-            ),
-          ),
-          body: Container(
-            alignment: Alignment.center,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(
-                  height: 10,
-                ),
-                Card(
-                  margin:
-                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        'Cari tips-tips menarik merawat kucingmu disini :)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 14,
-                            fontFamily: 'Montserrat',
-                            color: Color.fromRGBO(50, 84, 109, 1.0)),
-                      ),
-                      Text(
-                        'Meow ♥',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 14,
-                            fontFamily: 'Montserrat',
-                            color: Color.fromRGBO(50, 84, 109, 1.0)),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      )
-                    ],
-                  ),
-                ),
-                Flexible(
-                  child: ListView(
-                    children: <Widget>[
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          title: Text(
-                            '10 Kesalahan dalam Memelihara Kucing dan Harus Segera Dihindari, Memandikan hingga Memberi Susu',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Color.fromRGBO(50, 84, 109, 1.0)),
-                          ),
-                          subtitle: Text(
-                            'TribunNews.com',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 10,
-                                color: Color.fromRGBO(138, 138, 138, 1.0)
-                            ),
-                          ),
-                          leading: Image.asset('images/pic.jpg'),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ),
+              centerTitle: true,
+              title: Text(
+                 titleAppBar = tABarr[_selectedTab],
+                style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: kPrimaryFontFamily,
+                    fontWeight: FontWeight.w500),
+              ),
+              backgroundColor: kPrimaryPink),
+          body: _pageOptions[_selectedTab],
           bottomNavigationBar: BottomNavigationBar(
-            items: const <BottomNavigationBarItem>[
+            items:[
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text('Beranda'),
+                title: Text(tABarr[0]),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.chat_bubble),
-                title: Text('Konsultasi'),
+                title: Text(tABarr[1]),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.account_circle),
-                title: Text('Akun'),
+                title: Text(tABarr[2]),
               ),
             ],
-            onTap: null,
+            currentIndex: _selectedTab,
+            onTap: (int index){
+              setState(() {
+                _selectedTab = index;
+              });
+            },
             selectedItemColor: Colors.white,
-            backgroundColor: Color.fromRGBO(
-              243,
-              72,
-              91,
-              1.0,
-            ),
+            backgroundColor: kPrimaryPink,
             unselectedItemColor: Colors.white,
           ),
         ));

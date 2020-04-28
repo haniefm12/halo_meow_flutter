@@ -17,7 +17,7 @@ class LoginListView extends StatelessWidget {
             child: Text('Username',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 10.0),
         LogFormField(
@@ -33,7 +33,7 @@ class LoginListView extends StatelessWidget {
             child: Text('Password',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 10.0),
         LogFormField(
@@ -49,7 +49,7 @@ class LoginListView extends StatelessWidget {
           child: Text('Lupa kata sandi?',
               style: TextStyle(
                   fontSize: 13.0,
-                  fontFamily: 'Montserrat',
+                  fontFamily: kPrimaryFontFamily,
                   color: kPrimaryPink)),
         ),
         SizedBox(
@@ -88,7 +88,7 @@ class RegisterListView extends StatelessWidget {
             child: Text('Email',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 5.0),
         LogFormField(
@@ -102,7 +102,7 @@ class RegisterListView extends StatelessWidget {
             child: Text('Username',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 5.0),
         LogFormField(
@@ -116,7 +116,7 @@ class RegisterListView extends StatelessWidget {
             child: Text('Kata Sandi',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 5.0),
         LogFormField(
@@ -130,7 +130,7 @@ class RegisterListView extends StatelessWidget {
             child: Text('Konfirmasi kata Sandi',
                 style: TextStyle(
                     fontSize: 18.0,
-                    fontFamily: 'Montserrat',
+                    fontFamily: kPrimaryFontFamily,
                     color: kPrimaryPink))),
         SizedBox(height: 5.0),
         LogFormField(

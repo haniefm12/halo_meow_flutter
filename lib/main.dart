@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: kPrimaryPink,
         body: SafeArea(
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
                     'halomeow!',
                     style: TextStyle(
                         fontSize: 24.0,
-                        fontFamily: 'Montserrat',
+                        fontFamily: kPrimaryFontFamily,
                         color: kPrimaryWhite),
                   )
                 ],
@@ -59,12 +60,12 @@ class MyApp extends StatelessWidget {
               Text('Konsultasikan kesehatan',
                   style: TextStyle(
                       fontSize: 14.0,
-                      fontFamily: 'Montserrat',
+                      fontFamily: kPrimaryFontFamily,
                       color: kPrimaryWhite)),
               Text('kucing Anda di sini!',
                   style: TextStyle(
                       fontSize: 14.0,
-                      fontFamily: 'Montserrat',
+                      fontFamily: kPrimaryFontFamily,
                       color: kPrimaryWhite)),
               SizedBox(
                 height: 35.0,
