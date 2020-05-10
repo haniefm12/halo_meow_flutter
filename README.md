@@ -2,6 +2,45 @@
 
 Aplikasi untuk konsultasi kesehatan kucing secara Online 
 
+## Done :
+### screen
+- Splash screen
+- android app icon
+- Login Screen
+- Beranda Page
+- Konsultasi Page
+- Akun Page
+### action
+- navigation route
+- modular widget
+- Appbar pop menu action
+- Navigation Bottom Bar move tab
+### API 
+- Register
+- Login
+
+## To Do :
+### screen
+- ubah profil
+- chat
+- pop up profil doctor
+- setting page
+- about app page
+- news page
+
+### action
+- login , register , logout
+- setting
+- api
+- database
+- chat
+
+### API
+- post dokter
+- get dokter
+- post berita
+- get berita
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
