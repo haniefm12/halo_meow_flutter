@@ -1,3 +1,28 @@
+# Dokumentasi Halomeow
+Petunjuk penggunaaan API :
+
+# Register
+### Required :
+- email
+- username
+- password 
+
+### Response :
+- 201 -> Register berhasil
+- 404 -> Register gagal
+
+# Login 
+
+### Required :
+- email
+- password
+
+### Response :
+- 200 -> Login berhasil -> Token
+- 401 -> Email tidak terdaftar -> Token=null
+- 401 -> Password tidak cocok -> Token=null
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
